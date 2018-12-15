@@ -1,9 +1,9 @@
 
 /* Variables */
 $black: #151515;
-$blue: rgba(41, 77, 234, 1);
-$blue-dark: #595ff5;
-$blue-light: #2ba2f8;
+$gray: #51536E;
+$gray-dark: #3C3E51;
+$gray-light: #9397C6;
 $gray: #adadad;
 $gray-dark: #354052;
 $gray-light: #e8e8e8;
@@ -16,8 +16,8 @@ $white-light: rgba(255,255,255,.5);
 $margin: 1rem;
 $margin-lg: 1.5rem;
 
-$menu-gradient-main: #295af5;
-$menu-gradient-secondary: #595ff5;
+$menu-gradient-main: #51536E;
+$menu-gradient-secondary: #3C3E51;
 $menu-width-open: 240px;
 $menu-width-close: 110px;
 $menu-mobile-height: 70px;
@@ -55,9 +55,9 @@ $pagination-bg:                     $white;
 $pagination-border-width:           1px;
 $pagination-border-color:           $gray;
 
-$pagination-hover-color:            $blue;
+$pagination-hover-color:            $gray;
 $pagination-hover-bg:            	$white;
-$pagination-hover-border-color:    	$blue;
+$pagination-hover-border-color:    	$gray;
 
 $pagination-active-color:           $black;
 $pagination-active-bg:           	$white;
@@ -109,7 +109,7 @@ a, a:visited {
 }
 
 a:hover {
-	color: $blue;
+	color: $gray;
 	text-decoration: none;
 	transition: all 1s cubic-bezier(0, 1, .5, 1);
 }

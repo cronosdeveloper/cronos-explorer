@@ -15,30 +15,30 @@ const Coin = require('../model/coin');
 async function syncCoin() {
   const date = moment().utc().startOf('minute').toDate();
   // Setup the coinmarketcap.com api url.
-  const url = `${ config.coinMarketCap.api }${ config.coinMarketCap.ticker }`;
+  // const url = `${ config.coinMarketCap.api }${ config.coinMarketCap.ticker }`;
 
   const info = await rpc.call('getinfo');
   const masternodes = await rpc.call('getmasternodecount');
   const nethashps = await rpc.call('getnetworkhashps');
 
-  let market = await fetch(url);
-  if (Array.isArray(market)) {
-    market = market.length ? market[0] : {};
-  }
+  // let market = await fetch(url);
+  // if (Array.isArray(market)) {
+  //   market = market.length ? market[0] : {};
+  // }
 
   const coin = new Coin({
-    cap: market.market_cap_usd,
+    cap: 0,
     createdAt: date,
     blocks: info.blocks,
-    btc: market.price_btc,
+    btc: 0,
     diff: info.difficulty,
     mnsOff: masternodes.total - masternodes.stable,
     mnsOn: masternodes.stable,
     netHash: nethashps,
     peers: info.connections,
     status: 'Online',
-    supply: market.available_supply, // TODO: change to actual count from db.
-    usd: market.price_usd
+    supply: info.moneysupply,
+    usd: 0
   });
 
   await coin.save();

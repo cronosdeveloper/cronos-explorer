@@ -25,9 +25,9 @@ class Footer extends Component {
     return (
       <div className="footer">
         <div className="footer__block">
-          <img className="footer__logo" src="/img/footerlogo.svg" />
+          <img className="footer__logo" src="/img/footerlogo.png" />
           <span className="footer__legal">
-            <div>Copyright &copy; 2018 <a href="https://bulwarkcrypto.com/">Bulwark Cryptocurrency</a></div>
+            <div>Copyright &copy; 2018 <a href="https://cronoscoin.online/">Cronos</a></div>
             <div>Site design / Logo &copy; 2018 <a href="https://bulwarkcrypto.com/">Bulwark Cryptocurrency</a></div>
           </span>
         </div>
@@ -52,7 +52,7 @@ class Footer extends Component {
         </div>
         <div className="footer__block">
           <div className="footer__social-media-wrapper">
-            <div className="footer__social-title">Social Media</div>
+            {/* <div className="footer__social-title">Social Media</div>
             <div>
               <a href="https://bitcointalk.org/index.php?topic=2499481.0" target="_blank">
                 <Icon name="bitcoin" className="fab footer__social-media-icon" />
@@ -75,7 +75,7 @@ class Footer extends Component {
               <a href="http://facebook.com/bulwark.coin.IO/" target="_blank">
                 <Icon name="facebook" className="fab footer__social-media-icon" />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -1,0 +1,32 @@
+version: "2"
+services:
+  reverseproxy:
+    image: nginx:latest
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    volumes:
+      - ./reverseproxy/nginx.conf:/etc/nginx/nginx.conf
+      - ../public:/static
+      - ./dh-param/dhparam-2048.pem:/etc/ssl/certs/dhparam-2048.pem
+      - /docker-volumes/etc/letsencrypt/live/explorer.cronoscoin.online/fullchain.pem:/etc/letsencrypt/live/explorer.cronoscoin.online/fullchain.pem
+      - /docker-volumes/etc/letsencrypt/live/explorer.cronoscoin.online/privkey.pem:/etc/letsencrypt/live/explorer.cronoscoin.online/privkey.pem
+
+  api:
+    build: ./api
+    restart: always
+  cron:
+    build: ./cron
+    restart: always
+  daemon:
+    build: ./daemon
+    restart: always
+  mongodb:
+        image: mongo:latest
+        environment:
+          - MONGO_DATA_DIR=/data/db
+        volumes:
+          - ./data/db:/data/db
+        ports:
+            - 27017:27017
