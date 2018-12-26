@@ -11,7 +11,7 @@ const config = {
   },
   'coinMarketCap': {
     'api': 'http://api.coinmarketcap.com/v1/ticker/',
-    'ticker': 'crs'
+    'ticker': 'crsx'
   },
   'db': {
     'host': 'mongodb',

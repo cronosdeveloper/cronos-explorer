@@ -185,25 +185,25 @@ class PoS extends Component {
             <b>Block Subsidy:</b>
           </div>
           <div className="col-sm-8">
-            { numeral(vX.subsidy).format('0,0.0000') } CRS
+            { numeral(vX.subsidy).format('0,0.0000') } CRSX
           </div>
           <div className="col-sm-4">
             <b>PoS:</b>
           </div>
           <div className="col-sm-8">
-            { numeral(vX.posSubsidy).format('0,0.0000') } CRS
+            { numeral(vX.posSubsidy).format('0,0.0000') } CRSX
           </div>
           <div className="col-sm-4">
             <b>Masternode:</b>
           </div>
           <div className="col-sm-8">
-            { numeral(vX.mnSubsidy).format('0,0.0000') } CRS
+            { numeral(vX.mnSubsidy).format('0,0.0000') } CRSX
           </div>
           <div className="col-sm-4">
             <b>Calculation Amount:</b>
           </div>
           <div className="col-sm-8">
-            { numeral(this.state.amount).format('0,0.0000') } CRS
+            { numeral(this.state.amount).format('0,0.0000') } CRSX
           </div>
         </div>
         <hr />
@@ -236,7 +236,7 @@ class PoS extends Component {
         </div>
         <div className="row">
           <div className="col-sm-12 col-md-4">
-            Masternode Amount (CRS):
+            Masternode Amount (CRSX):
           </div>
           <div className="col-sm-12 col-md-2">
             { numeral(vX.mn).format('0,0.0000') }
@@ -258,7 +258,7 @@ class PoS extends Component {
         </div>
         <div className="row">
           <div className="col-sm-12 col-md-4">
-            Masternode Reward (CRS):
+            Masternode Reward (CRSX):
           </div>
           <div className="col-sm-12 col-md-2">
             { numeral(vX.mnSubsidy * mns).format('0,0.0000') }
@@ -276,7 +276,7 @@ class PoS extends Component {
         <br />
         <div className="row">
           <div className="col-sm-12 col-md-4">
-            PoS Amount (CRS):
+            PoS Amount (CRSX):
           </div>
           <div className="col-sm-12 col-md-2">
             { numeral(vX.pos).format('0,0.0000') }
@@ -298,7 +298,7 @@ class PoS extends Component {
         </div>
         <div className="row">
           <div className="col-sm-12 col-md-4">
-            PoS Reward (CRS):
+            PoS Reward (CRSX):
           </div>
           <div className="col-sm-12 col-md-2">
             { numeral(vX.posSubsidy).format('0,0.0000') }
@@ -317,7 +317,7 @@ class PoS extends Component {
         <br />
         <div className="row">
           <div className="col-sm-12 col-md-4">
-            Total Amount (CRS):
+            Total Amount (CRSX):
           </div>
           <div className="col-sm-12 col-md-2">
             { numeral(vX.mnSubsidy * mns + vX.posSubsidy).format('0,0.0000') }

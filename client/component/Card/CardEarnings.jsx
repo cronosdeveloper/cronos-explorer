@@ -23,7 +23,7 @@ const CardEarnings = ({ coin }) => {
           DAILY
         </div>
         <div className="col-sm-12 col-md-9">
-          { nbtc(day) } CRS / { nbtc(day * coin.btc) } BTC / { nusd(day * coin.usd) } USD
+          { nbtc(day) } CRSX / { nbtc(day * coin.btc) } BTC / { nusd(day * coin.usd) } USD
         </div>
       </div>
       <div className="row">
@@ -31,7 +31,7 @@ const CardEarnings = ({ coin }) => {
           WEEKLY
         </div>
         <div className="col-sm-12 col-md-9">
-          { nbtc(week) } CRS / { nbtc(week * coin.btc) } BTC / { nusd(week * coin.usd) } USD
+          { nbtc(week) } CRSX / { nbtc(week * coin.btc) } BTC / { nusd(week * coin.usd) } USD
         </div>
       </div>
       <div className="row">
@@ -39,7 +39,7 @@ const CardEarnings = ({ coin }) => {
           MONTHLY
         </div>
         <div className="col-sm-12 col-md-9">
-          { nbtc(month) } CRS / { nbtc(month * coin.btc) } BTC / { nusd(month * coin.usd) } USD
+          { nbtc(month) } CRSX / { nbtc(month * coin.btc) } BTC / { nusd(month * coin.usd) } USD
         </div>
       </div>
       <div className="row">
@@ -47,7 +47,7 @@ const CardEarnings = ({ coin }) => {
           YEARLY
         </div>
         <div className="col-sm-12 col-md-9">
-          { nbtc(year) } CRS / { nbtc(year * coin.btc) } BTC / { nusd(year * coin.usd) } USD
+          { nbtc(year) } CRSX / { nbtc(year * coin.btc) } BTC / { nusd(year * coin.usd) } USD
         </div>
       </div>
       <div className="row">
